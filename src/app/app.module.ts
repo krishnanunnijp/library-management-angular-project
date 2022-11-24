@@ -13,6 +13,7 @@ import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AddBookComponent } from './add-book/add-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
+import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -59,7 +60,8 @@ const myRoute: Routes =[
     UserNavbarComponent,
     AddBookComponent,
     IssueBookComponent,
-    DeleteBookComponent
+    DeleteBookComponent,
+    AdminNavbarComponent
 
   ],
   imports: [
