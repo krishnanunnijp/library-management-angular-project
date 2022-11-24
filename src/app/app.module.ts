@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -14,6 +15,10 @@ const myRoute: Routes =[
   {
     path:"signup",
     component: SignupComponent
+  },
+  {
+    path:"user",
+    component: UserLoginPageComponent
   }
 ]
 
@@ -21,7 +26,8 @@ const myRoute: Routes =[
   declarations: [
     AppComponent,
     AdminLoginComponent,
-    SignupComponent
+    SignupComponent,
+    UserLoginPageComponent
 
   ],
   imports: [
