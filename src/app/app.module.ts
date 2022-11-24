@@ -11,6 +11,7 @@ import { ViewBookComponent } from './view-book/view-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { IssueBookComponent } from './issue-book/issue-book.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -35,6 +36,10 @@ const myRoute: Routes =[
   {
     path:"add",
     component: AddBookComponent
+  },
+  {
+    path:"issue",
+    component: IssueBookComponent
   }
 ]
 
@@ -47,7 +52,8 @@ const myRoute: Routes =[
     ViewBookComponent,
     SearchBookComponent,
     UserNavbarComponent,
-    AddBookComponent
+    AddBookComponent,
+    IssueBookComponent
 
   ],
   imports: [
