@@ -7,6 +7,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
 import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
+import { ViewBookComponent } from './view-book/view-book.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -19,6 +20,10 @@ const myRoute: Routes =[
   {
     path:"user",
     component: UserLoginPageComponent
+  },
+  {
+    path:"view",
+    component: ViewBookComponent
   }
 ]
 
@@ -27,7 +32,8 @@ const myRoute: Routes =[
     AppComponent,
     AdminLoginComponent,
     SignupComponent,
-    UserLoginPageComponent
+    UserLoginPageComponent,
+    ViewBookComponent
 
   ],
   imports: [
