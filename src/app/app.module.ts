@@ -9,6 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
 import { ViewBookComponent } from './view-book/view-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -39,7 +40,8 @@ const myRoute: Routes =[
     SignupComponent,
     UserLoginPageComponent,
     ViewBookComponent,
-    SearchBookComponent
+    SearchBookComponent,
+    UserNavbarComponent
 
   ],
   imports: [
