@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
 import { UserLoginPageComponent } from './user-login-page/user-login-page.component';
 import { ViewBookComponent } from './view-book/view-book.component';
+import { SearchBookComponent } from './search-book/search-book.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -24,6 +25,10 @@ const myRoute: Routes =[
   {
     path:"view",
     component: ViewBookComponent
+  },
+  {
+    path:"search",
+    component: SearchBookComponent
   }
 ]
 
@@ -33,7 +38,8 @@ const myRoute: Routes =[
     AdminLoginComponent,
     SignupComponent,
     UserLoginPageComponent,
-    ViewBookComponent
+    ViewBookComponent,
+    SearchBookComponent
 
   ],
   imports: [
