@@ -10,6 +10,7 @@ import { UserLoginPageComponent } from './user-login-page/user-login-page.compon
 import { ViewBookComponent } from './view-book/view-book.component';
 import { SearchBookComponent } from './search-book/search-book.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { AddBookComponent } from './add-book/add-book.component';
 const myRoute: Routes =[
   {
     path:"",
@@ -30,6 +31,10 @@ const myRoute: Routes =[
   {
     path:"search",
     component: SearchBookComponent
+  },
+  {
+    path:"add",
+    component: AddBookComponent
   }
 ]
 
@@ -41,7 +46,8 @@ const myRoute: Routes =[
     UserLoginPageComponent,
     ViewBookComponent,
     SearchBookComponent,
-    UserNavbarComponent
+    UserNavbarComponent,
+    AddBookComponent
 
   ],
   imports: [
