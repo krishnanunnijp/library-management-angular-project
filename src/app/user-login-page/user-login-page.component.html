@@ -11,7 +11,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="password" class="form-label">password:</label>
-                    <input name="password" type="password" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="password" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <a (click)="userlog()" class="btn btn-primary">login</a>
