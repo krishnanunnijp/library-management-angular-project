@@ -14,6 +14,7 @@ import { AddBookComponent } from './add-book/add-book.component';
 import { IssueBookComponent } from './issue-book/issue-book.component';
 import { DeleteBookComponent } from './delete-book/delete-book.component';
 import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { FormsModule } from '@angular/forms';
 const myRoute: Routes =[
   {
     path:"",
@@ -67,7 +68,8 @@ const myRoute: Routes =[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

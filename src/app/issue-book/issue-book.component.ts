@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./issue-book.component.css']
 })
 export class IssueBookComponent {
+  name=""
+  title=""
+  document=""
+  membership=""
+
+  issueb =()=>
+  {
+    let data:any ={
+
+      "name":this.name,
+      "title":this.title,
+      "document":this.document,
+      "membership":this.membership
+    
+    }
+    console.log(data)
+  }
 
 }

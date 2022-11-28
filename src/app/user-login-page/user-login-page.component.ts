@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-login-page.component.css']
 })
 export class UserLoginPageComponent {
+  username=""
+  password=""
 
+  userlog =()=>
+  {
+    let data:any={
+      "username":this.username,
+      "password":this.password
+
+    }
+    console.log(data)
+
+  }
 }
