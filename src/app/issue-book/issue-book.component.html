@@ -8,23 +8,23 @@
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="title" class="form-label">Book title</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="document" class="document">document issue </label>
-                    <input type="file" class="form-control">
+                    <input name="document" [(ngModel)]="document" type="file" class="form-control">
                 </div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="membership" class="form-label">Membership number</label>
-                    <input type="text" class="form-control">
+                    <input name="membership" [(ngModel)]="membership" type="text" class="form-control">
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <a href="" class="btn btn-warning">Submit</a>
+                    <a (click)="issueb()" class="btn btn-warning">Submit</a>
                 </div>
             </div>
         </div>
