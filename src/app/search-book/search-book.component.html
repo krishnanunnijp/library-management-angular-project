@@ -11,6 +11,18 @@
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 xol-xxl-12 text-center">
                     <a (click)="searchb()" class="btn btn-info">search</a>
                 </div>                </div>
+                <div class="row g-3 mt-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of data">
+                        <div class="card" style="width: 18rem;">
+                            <img height="200px" src="{{i.image}}"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{i.title}} </h5>
+                                <p class="card-text">{{i.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </div>
