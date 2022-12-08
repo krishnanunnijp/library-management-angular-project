@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-add-book',
@@ -9,7 +10,7 @@ export class AddBookComponent {
   title=""
   image=""
   description=""
-
+constructor(private api:ApiService){}
 
   readValue=()=>
   {
@@ -19,7 +20,19 @@ export class AddBookComponent {
       "description":this.description
       
     }
-    console.log(data)
+    this.api.addBook(data).subscribe(
+      (generated:any)=>{
+        console.log(generated)
+        if(generated.status=="success"){
+          alert("added successfully")
+          this.title=""
+          this.image=""
+          this.description=""
+        }else{
+          alert("something worong")
+        }
+      }
+    )
   }
 
 }
