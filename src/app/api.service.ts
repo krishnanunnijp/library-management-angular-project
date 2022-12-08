@@ -13,4 +13,7 @@ export class ApiService {
   addBook=(value:any)=>{
     return this.http.post("http://localhost:8080/add",value)
   }
+  searchBook=(value:any)=>{
+    return this.http.post("http://localhost:8080/search",value)
+  }
 }
