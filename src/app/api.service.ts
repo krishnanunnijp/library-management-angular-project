@@ -10,4 +10,7 @@ export class ApiService {
   fetchBook=()=>{
     return this.http.get("http://localhost:8080/")
   }
+  addBook=(value:any)=>{
+    return this.http.post("http://localhost:8080/add",value)
+  }
 }
