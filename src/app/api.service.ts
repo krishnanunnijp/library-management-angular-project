@@ -22,4 +22,7 @@ export class ApiService {
   addUser=(value:any)=>{
     return this.http.post("http://localhost:8080/adduser",value)
   }
+  searchUser=(value:any)=>{
+    return this.http.post("http://localhost:8080/login",value)
+  }
 }
