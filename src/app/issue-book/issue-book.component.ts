@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-issue-book',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./issue-book.component.css']
 })
 export class IssueBookComponent {
+  constructor(private api:ApiService){}
   name=""
   title=""
   document=""
@@ -21,6 +23,11 @@ export class IssueBookComponent {
       "membership":this.membership
     
     }
+    this.api.addIssue(data).subscribe(
+      (generated:any)=>{
+        console.log(generated)
+      }
+    )
     console.log(data)
   }
 

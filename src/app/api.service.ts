@@ -25,4 +25,7 @@ export class ApiService {
   searchUser=(value:any)=>{
     return this.http.post("http://localhost:8080/login",value)
   }
+  addIssue=(value:any)=>{
+    return this.http.post("http://localhost:8080/addissue",value)
+  }
 }
