@@ -19,4 +19,7 @@ export class ApiService {
   deleteBook=(value:any)=>{
     return this.http.post("http://localhost:8080/delete",value)
   }
+  addUser=(value:any)=>{
+    return this.http.post("http://localhost:8080/adduser",value)
+  }
 }
